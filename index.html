@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./assets/rightSplash.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <img src="./assets/name.png" alt="">
+            </div>
+            <div class="elem">
+                <h4>UI/UX Designer.</h4>
+            </div>
+            <div class="elem">
+                <h4>Work for Brand.</h4>
+            </div>
+            <div class="elem">
+                <img src="./assets/name.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="bg">
+        <nav>
+            <img src="./assets/logo.png " alt="">
+            <div id="links">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <i class="ri-search-line"></i>
+                <i id="menu" class="ri-menu-2-line"></i>
+            </div>
+        </nav>
+        <section>
+            <img src="./assets/rightSplash.png" alt="">
+            <div id="left">
+                <div id="smline"></div>
+                <h2 class="anim">Hello, I am 👋</h2>
+                <img class="anim" src="./assets/name.png" alt="">
+                <h5 class="anim">A designer from <span id="lblue">ukraine.</span></h5>
+                <div class="anim" id="plybtn">
+                    <img src="./assets/playButton.png" alt="">
+                    <h5>see my <span>work profile.</span></h5>
+                </div>
+                <div id="contact">
+                    <h4 class="anim">contact me</h4>
+                    <h6 class="anim">Email : <span>someone@gmail.com</span></h6>
+                    <h6 class="anim">Contact Number : <span>+91-879-766-9808</span></h6>
+                </div>
+            </div>
+            <div id="right">
+                <img src="./assets/mainImage.png" alt="">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#bg');
+        var toggle = true;
+
+        menu.addEventListener('click', function () {
+            if (toggle === true) {
+                bg.style.transform = 'scale(0.8) rotate(-2deg)';
+                bg.style.borderRadius = '5px';
+                bg.style.boxShadow = '0px 150px 45px -100px rgba(0,0,0,0.5)';
+                toggle = false;
+            } else {
+                bg.style.transform = 'scale(1)';
+                toggle = true
+            }
+        })
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
